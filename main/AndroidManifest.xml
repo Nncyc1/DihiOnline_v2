@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gimenez.danielgga.dihi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PacienteLogin">
+            <intent-filter>
+                <action android:name="com.gimenez.danielgga.dihi.PacienteLogin" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MedicoLogin">
+            <intent-filter>
+                <action android:name="com.gimenez.danielgga.dihi.MedicoLogin" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EligeEnfermedad">
+            <intent-filter>
+                <action android:name="com.gimenez.danielgga.dihi.EligeEnfermedad" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EligeAccion">
+            <intent-filter>
+                <action android:name="com.gimenez.danielgga.dihi.EligeAccion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MedicoAccion">
+            <intent-filter>
+                <action android:name="com.gimenez.danielgga.dihi.MedicoAccion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity">
+            <intent-filter>
+                <action android:name="com.gimenez.danielgga.dihi.Main2Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".prueba">
+            <intent-filter>
+                <action android:name="com.gimenez.danielgga.dihi.prueba" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UsuarioPaciente">
+            <intent-filter>
+                <action android:name="com.gimenez.danielgga.dihi.UsuarioPaciente" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Encuesta">
+            <intent-filter>
+                <action android:name="com.gimenez.danielgga.dihi.Encuesta" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".listadepacientes" />
+
+        <intent-filter>
+            <action android:name="com.gimenez.danielgga.dihi.listadepacientes" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+        <activity android:name=".invitacionesmedicos" />
+
+        <intent-filter>
+            <action android:name="com.gimenez.danielgga.dihi.invitacionesmedicos" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+        <activity android:name=".usuario">
+            <intent-filter>
+                <action android:name="com.gimenez.danielgga.dihi.usuario" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

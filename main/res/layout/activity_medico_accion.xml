@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_medico_accion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gimenez.danielgga.dihi.MedicoAccion">
+
+    <TextView
+        android:text="¿Qué desea hacer hoy?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView11"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="Log Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/logout" />
+
+    <Button
+        android:text="Pacientes con alarma activada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button12"
+        android:layout_above="@+id/logout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp" />
+
+    <Button
+        android:text="Calendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendariomedico"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignEnd="@+id/cuentamedico" />
+
+    <Button
+        android:text="Lista de pacientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listadepacientes"
+        android:layout_alignBaseline="@+id/calendariomedico"
+        android:layout_alignBottom="@+id/calendariomedico"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cuentamedico"
+        android:layout_alignBaseline="@+id/alerta"
+        android:layout_alignBottom="@+id/alerta"
+        android:layout_alignEnd="@+id/button12"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:text="Enviar Alerta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alerta"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/listadepacientes"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp" />
+
+    <Button
+        android:text="Formularios Recibidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/encuestas"
+        android:layout_below="@+id/alerta"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:text="invitaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/encuestas"
+        android:layout_alignEnd="@+id/button12"
+        android:id="@+id/invitacion" />
+</RelativeLayout>
